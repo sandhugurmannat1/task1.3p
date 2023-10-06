@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GURMANNAT SANDHU-PORTFOLIO</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.0/dist/vue.global.prod.js"></script>
+
+    
+</head>
+
+<body>
+
+    
+    <div id="app">
+        <header>
+            <h1>GURMANNAT SANDHU</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">TOTAL PROJECT 4</a></li>
+                    <li><a href="/about">STUDENT OF BECHALORS IN INFORMATION TECHNOLOGY</a></li>
+                    <li><a href="/contact">EMAIL-sandhugurmannat6@gmail.com contactno.-0467713936</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <router-view></router-view>
+
+        <user-profile></user-profile>
+
+        <section class="experience">
+            <h2>WELCOME TO MY PORTFOLIO</h2>
+            <p>HI, I'M GURMANNAT SANDHU, A PASSIONATE DEVELOPER.</p>
+        </section>
+    </div>
+
+    <section class="profile">
+        <img src="C:\Users\sandh\OneDrive\Documents\sit120\Screenshot 2023-10-06 162054.png" alt="Profile Picture">
+        <h2>PROJECTS</h2>
+        <p>{{TASK-1.1 INTRODUCTION TO WEB APPS}}-{{This was our first task to submit so we started with everything basic thing so we had to create an HTML page in which i added image,table.formand 2 or 3 more things. moreover, i added CSS to my HTML page and then we were asked to write a reflectionon the HTML page we made.}}</p>
+    </section>
+
+    <section class="experience">
+        <h2>ABOUT ME</h2>
+        <p>I am a student at deakin studying nachelors of information technology i am going to complete me 2nd trimester.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" v-model="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" v-model="email">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+        </div>
+    </section>
+
+
+    
+
+
+
+    
+
+
+
+
+</body>
+
+</html>
